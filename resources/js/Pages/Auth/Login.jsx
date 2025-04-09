@@ -95,6 +95,16 @@ export default function Login({ status, canResetPassword }) {
                     </PrimaryButton>
                 </div>
             </form>
+
+            {/* Link per la registrazione */}
+            <div className="mt-4 text-center">
+                <Link
+                    href={route('register')}  // Verifica che la rotta 'register' esista nel tuo file web.php
+                    className="text-sm text-gray-600 underline hover:text-gray-900"
+                >
+                    Don't have an account? Register here
+                </Link>
+            </div>
         </GuestLayout>
     );
 }
